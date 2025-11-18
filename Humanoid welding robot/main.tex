@@ -1,0 +1,127 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i}\kern-.025em b}\kern-.08em\TeX}
+
+\begin{document}
+
+\title{Welding Robot: A Review of Design and Implementation}
+
+\author{\IEEEauthorblockN{Vignesh Lakshmanasamy \IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1} Robotics, MDX University, Dubai, United Arab Emirates \\
+Email: vigneshlr157@gmail.com}
+
+}
+
+\maketitle
+
+\begin{abstract}
+------- after completing the Entire report -------
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Humanoid robot, welding automation, industrial robotics, robot design, intelligent sensing.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Humanoid robots have gained significant research attention due to their potential to replicate human dexterity, mobility, and adaptability. In welding applications, these capabilities enable robots to operate in unstructured or semi-structured environments where traditional robotic arms face limitations \cite{shi2019review}.
+
+As industries transition toward Industry 4.0, the demand for flexible and intelligent robotic welding systems has increased. Humanoid welding robots combine human-like kinematics with advanced sensing, allowing them to perform tasks such as arc welding, MIG/TIG welding, and inspection in complex workspaces.
+
+This paper reviews recent advancements in humanoid welding systems, covering mechanical structure, sensing integration, motion planning, and real-world implementation challenges.
+
+\section{Mechanical Design of Humanoid Welding Robots}
+Humanoid welding robots aim to replicate the range of motion and dexterity of human welders. Key aspects include:
+
+\subsection{Anthropomorphic Structure}
+Modern humanoid robots feature:
+\begin{itemize}
+    \item multi-DOF arms for flexible positioning,
+    \item articulated wrists capable of precise welding torch manipulation,
+    \item stable bipedal or wheeled locomotion systems.
+\end{itemize}
+
+Examples include the HRP series, Boston Dynamics Atlas, and custom-built industrial humanoids \cite{kaneko2004humanoid}.
+
+\subsection{Material Selection}
+Lightweight materials such as aluminum alloys, carbon fiber composites, and high-strength steels are used to ensure structural stiffness while minimizing weight.
+
+\subsection{End-Effector Design}
+Specialized welding torches are integrated with:
+\begin{itemize}
+    \item cooling systems,
+    \item cable management,
+    \item integrated sensors for weld seam detection.
+\end{itemize}
+
+\section{Intelligent Sensing for Welding}
+Sensing is critical for humanoid welding robots to adapt to varying work conditions.
+
+\subsection{Vision Systems}
+RGB-D cameras, stereo vision, and structured light sensors enable:
+\begin{itemize}
+    \item seam tracking,
+    \item weld quality analysis,
+    \item robot localization.
+\end{itemize}
+
+\subsection{Force and Torque Sensors}
+These enable compliant welding motions and help detect surface irregularities \cite{kim2018force}.
+
+\subsection{Thermal and Arc Sensors}
+Used for:
+\begin{itemize}
+    \item monitoring arc stability,
+    \item maintaining welding temperature,
+    \item detecting defects during the welding process.
+\end{itemize}
+
+\section{Control Strategies and Motion Planning}
+Humanoid welding robots require advanced control approaches due to their high DOF and nonlinear kinematics.
+
+\subsection{Inverse Kinematics and Dynamics}
+Real-time IK solvers and model-predictive control methods enable precise end-effector positioning.
+
+\subsection{Learning-Based Motion Planning}
+Deep learning and reinforcement learning help robots imitate human welding trajectories and optimize path planning \cite{zhou2020learning}.
+
+\subsection{Human-Robot Collaboration}
+Safety-aware control architectures allow humanoid robots to work near human workers.
+
+\section{Implementation Challenges}
+Despite advancements, several issues remain:
+\begin{itemize}
+    \item high power consumption and heat management,
+    \item complex calibration of sensors,
+    \item safety certification for industrial deployment,
+    \item robustness in harsh welding environments.
+\end{itemize}
+
+\section{Future Research Directions}
+Promising areas include:
+\begin{itemize}
+    \item multimodal sensor fusion for improved seam tracking,
+    \item lightweight and fire-resistant materials,
+    \item improved dexterity for intricate welding tasks,
+    \item autonomous learning from human welders through demonstration.
+\end{itemize}
+
+\section{Conclusion}
+Humanoid welding robots represent a major advancement in industrial automation, offering flexibility, adaptability, and human-like precision. Continued research in sensing, AI-driven planning, and robust design is essential for widespread industrial adoption.
+
+\section*{Acknowledgment}
+The authors would like to thank the supporting institutions and researchers contributing to humanoid robotic welding advancements.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
